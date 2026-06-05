@@ -2,7 +2,7 @@
 title: 陈玉明的项目作品集
 description: 陈玉明的项目展示页，聚焦图形编辑、数据可视化、Three.js/WebGL、低代码看板和多端前端应用。
 baseurl: "/projects"
-url: "https://chenyomi.github.io"
+url: "https://chenyomi.top"
 
 # User settings
 username: 陈玉明
@@ -11,7 +11,7 @@ user_title: Frontend Developer / Visual Systems
 email: 408550179@qq.com
 github_username: chenyomi
 blog_url: https://408550179s-organization.gitbook.io/blog
-home_url: https://chenyomi.github.io
+home_url: https://chenyomi.top
 
 # Google-analytics
 google-analytics:

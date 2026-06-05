@@ -1,6 +1,6 @@
 # 陈玉明项目作品集
 
-这是 `https://chenyomi.github.io/projects/` 的项目展示页，用来展示可公开的项目类型和技术能力。
+这是 `https://chenyomi.top/projects/` 的项目展示页，用来展示可公开的项目类型和技术能力。
 
 页面聚焦：
 
