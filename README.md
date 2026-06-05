@@ -1,71 +1,30 @@
-# Particle Jekyll Theme
+# 陈玉明项目作品集
 
-![](./particle.jpg)
+这是 `https://chenyomi.github.io/projects/` 的项目展示页，用来展示可公开的项目类型和技术能力。
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+页面聚焦：
 
-The Theme features:
+- 图形编辑器与可视化搭建工具
+- Three.js / WebGL 工业 3D 可视化
+- 低代码看板设计器
+- Web、H5、小程序、App、Electron 等多端应用
+- 中后台与数据可视化系统
 
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
+## 隐私原则
 
-## Basic Setup
+公开页面只展示项目方向、技术栈和工程能力，不包含公司名称、客户名称、内部业务数据、当前项目真实名称、私人联系方式或求职细节等敏感信息。
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
-3. Edit `_config.yml` to personalize your site.
+## 开发
 
-## Site and User Settings
+这个仓库基于 Jekyll 和 Particle 主题。当前页面额外引入了 `assets/css/portfolio.css`，因此 GitHub Pages 部署时不依赖本地 gulp 编译也能展示新版样式。
 
-You have to fill some informations on `_config.yml` to customize your site.
+如需重新编译原主题资源：
 
+```bash
+yarn
+gulp
 ```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
-
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-```
-
-**Don't forget to change your url before you deploy your site!**
-
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
-
-## Running the blog in local
-
-In order to compile the assets and run Jekyll on local you need to follow those steps:
-
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
-- Install dependencies: `yarn`
-- Run: `gulp`
-
-## License
-
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
 
 ## Credits
 
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+Base theme: [Particle](https://github.com/nrandecker/particle) by Nathan Randecker.

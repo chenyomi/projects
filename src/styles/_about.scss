@@ -1,7 +1,8 @@
 #about {
   width: 90%;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1080px;
+  padding: 80px 0 34px;
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
@@ -9,6 +10,19 @@
 
 .tech {
   margin: 10px;
+  flex: 1;
+  min-width: 220px;
+  padding: 26px 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #fff, #f8fafc);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
+
+  h2 {
+    margin: 0 0 12px;
+    padding-top: 0;
+    color: #111827;
+  }
 }
 
 .user {
@@ -18,8 +32,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 28px;
   p {
     font-size: 16px;
+    color: #5b6472;
+    line-height: 1.7;
   }
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
@@ -30,4 +49,18 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+  max-width: 780px;
+
+  h1 {
+    margin: 0;
+    padding-top: 0;
+    color: #111827;
+    letter-spacing: -.04em;
+  }
+
+  p {
+    color: #5b6472;
+    font-size: 17px;
+    line-height: 1.8;
+  }
 }

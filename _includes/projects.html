@@ -1,29 +1,77 @@
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1> 项目方向 </h1>
+  <p>以下内容是可公开展示的项目类型总结，已去掉公司、客户、内部数据和真实敏感项目名。</p>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
+
+<div class="portfolio-grid">
+  <article class="project-card featured">
+    <p class="project-kicker">Canvas / Editor / Visualization</p>
+    <h3>图形编辑器与可视化搭建工具</h3>
+    <p>围绕画布、拖拽、元素属性、组件配置、数据绑定和预览渲染做模块拆分，让复杂可视化页面可以通过配置方式快速组合。</p>
+    <ul class="tag-list">
+      <li>Vue 3</li>
+      <li>Canvas</li>
+      <li>Editor UX</li>
+      <li>组件配置</li>
+      <li>数据源</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
+  </article>
+
+  <article class="project-card">
+    <p class="project-kicker">Three.js / WebGL</p>
+    <h3>工业 3D 可视化应用</h3>
+    <p>处理模型加载、灯光材质、事件拾取、状态切换和渲染性能，用 Web 技术承载设备、工件、物料等信息的可视化展示。</p>
+    <ul class="tag-list">
+      <li>Three.js</li>
+      <li>WebGL</li>
+      <li>模型交互</li>
+      <li>性能优化</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
+  </article>
+
+  <article class="project-card">
+    <p class="project-kicker">Dashboard Builder</p>
+    <h3>低代码看板设计器</h3>
+    <p>支持图表拖拽、布局切换、动态边框、数据源配置、移动端适配和可复用组件，提升数据看板交付效率。</p>
+    <ul class="tag-list">
+      <li>ECharts</li>
+      <li>Grid Layout</li>
+      <li>Monaco Editor</li>
+      <li>低代码</li>
+    </ul>
+  </article>
+
+  <article class="project-card">
+    <p class="project-kicker">Web / H5 / App</p>
+    <h3>多端业务应用</h3>
+    <p>覆盖管理后台、移动端 H5、小程序、uniapp、Hybrid App 和桌面端应用，能从工程搭建推进到打包发布。</p>
+    <ul class="tag-list">
+      <li>Vue</li>
+      <li>uniapp</li>
+      <li>小程序</li>
+      <li>Electron</li>
+      <li>Hybrid App</li>
+    </ul>
+  </article>
+
+  <article class="project-card">
+    <p class="project-kicker">Admin / Data</p>
+    <h3>中后台与数据可视化系统</h3>
+    <p>沉淀权限、菜单、表单、文件直传、地图、Socket、虚拟滚动、图表组件和业务模块，支撑长期迭代。</p>
+    <ul class="tag-list">
+      <li>Element</li>
+      <li>Ant Design Vue</li>
+      <li>Pinia</li>
+      <li>Socket</li>
+      <li>地图</li>
+    </ul>
+  </article>
+
+  <article class="project-card callout">
+    <p class="project-kicker">Contact</p>
+    <h3>需要更多细节可以邮件沟通。</h3>
+    <p>公开页面只保留项目方向和技术能力，具体业务和隐私内容不会放到站点上。</p>
+    <a class="project-link" href="mailto:{{site.email}}">联系我</a>
+    <a class="project-link ghost" href="{{site.home_url}}">返回主页</a>
+  </article>
 </div>
