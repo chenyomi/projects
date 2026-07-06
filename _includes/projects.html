@@ -1,76 +1,63 @@
 <div class="user-details">
-  <h1> 项目方向 </h1>
-  <p>以下内容是可公开展示的项目类型总结，已去掉公司、客户、内部数据和真实敏感项目名。</p>
+  <h1> 项目作品 </h1>
+  <p>先放两个可以公开访问的项目：一个桌面端账务管理应用，一个 Leafer UI 富文本编辑插件。每个项目都保留介绍、技术点和常用跳转入口。</p>
 </div>
 
 <div class="portfolio-grid">
-  <article class="project-card featured">
-    <p class="project-kicker">Canvas / Editor / Visualization</p>
-    <h3>图形编辑器与可视化搭建工具</h3>
-    <p>围绕画布、拖拽、元素属性、组件配置、数据绑定和预览渲染做模块拆分，让复杂可视化页面可以通过配置方式快速组合。</p>
+  <article class="project-card project-card-large">
+    <p class="project-kicker">Electron / Ledger / Desktop App</p>
+    <h3>Electron ERP 账务管理系统</h3>
+    <p>面向本地账务和库存流水的桌面端应用，覆盖现金账、公账、客户往来、供应商往来、产品出入库、Excel 导入导出、备份恢复和自动更新发布流程。</p>
     <ul class="tag-list">
       <li>Vue 3</li>
-      <li>Canvas</li>
-      <li>Editor UX</li>
-      <li>组件配置</li>
-      <li>数据源</li>
-    </ul>
-  </article>
-
-  <article class="project-card">
-    <p class="project-kicker">Three.js / WebGL</p>
-    <h3>工业 3D 可视化应用</h3>
-    <p>处理模型加载、灯光材质、事件拾取、状态切换和渲染性能，用 Web 技术承载设备、工件、物料等信息的可视化展示。</p>
-    <ul class="tag-list">
-      <li>Three.js</li>
-      <li>WebGL</li>
-      <li>模型交互</li>
-      <li>性能优化</li>
-    </ul>
-  </article>
-
-  <article class="project-card">
-    <p class="project-kicker">Dashboard Builder</p>
-    <h3>低代码看板设计器</h3>
-    <p>支持图表拖拽、布局切换、动态边框、数据源配置、移动端适配和可复用组件，提升数据看板交付效率。</p>
-    <ul class="tag-list">
-      <li>ECharts</li>
-      <li>Grid Layout</li>
-      <li>Monaco Editor</li>
-      <li>低代码</li>
-    </ul>
-  </article>
-
-  <article class="project-card">
-    <p class="project-kicker">Web / H5 / App</p>
-    <h3>多端业务应用</h3>
-    <p>覆盖管理后台、移动端 H5、小程序、uniapp、Hybrid App 和桌面端应用，能从工程搭建推进到打包发布。</p>
-    <ul class="tag-list">
-      <li>Vue</li>
-      <li>uniapp</li>
-      <li>小程序</li>
       <li>Electron</li>
-      <li>Hybrid App</li>
+      <li>Vuetify</li>
+      <li>SQLite</li>
+      <li>Excel</li>
+      <li>Auto Update</li>
     </ul>
+    <div class="project-actions" aria-label="Electron ERP project links">
+      <a class="project-link" href="https://github.com/chenyomi/electron-erp/releases" target="_blank" rel="noopener">下载 Releases</a>
+      <a class="project-link ghost" href="https://github.com/chenyomi/electron-erp" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </article>
+
+  <article class="project-card project-card-large accent">
+    <p class="project-kicker">Leafer UI / Rich Text / npm Package</p>
+    <h3>@chenyomi/leafer-htmltext-edit</h3>
+    <p>为 Leafer UI 提供 HTML 富文本编辑能力，集成 Quill 2.0，支持字体、字号、颜色、对齐、行高、字间距、列表、行内描边和选区级加粗等编辑能力。</p>
+    <ul class="tag-list">
+      <li>Leafer UI</li>
+      <li>Quill 2.0</li>
+      <li>TypeScript</li>
+      <li>ESM / CJS</li>
+      <li>npm</li>
+    </ul>
+    <div class="project-actions" aria-label="Leafer HTMLText Edit project links">
+      <a class="project-link" href="https://www.chenyomi.top/leafer-htmltext-edit-website/" target="_blank" rel="noopener">插件官网</a>
+      <a class="project-link" href="https://www.chenyomi.top/leafer-htmltext-edit-view/" target="_blank" rel="noopener">在线演示</a>
+      <a class="project-link" href="https://www.chenyomi.top/leafer-htmltext-edit-website/docs" target="_blank" rel="noopener">文档</a>
+      <a class="project-link ghost" href="https://www.npmjs.com/package/@chenyomi/leafer-htmltext-edit" target="_blank" rel="noopener">npm</a>
+      <a class="project-link ghost" href="https://github.com/chenyomi/leafer-htmltext-edit-view" target="_blank" rel="noopener">Demo GitHub</a>
+    </div>
   </article>
 
   <article class="project-card">
-    <p class="project-kicker">Admin / Data</p>
-    <h3>中后台与数据可视化系统</h3>
-    <p>沉淀权限、菜单、表单、文件直传、地图、Socket、虚拟滚动、图表组件和业务模块，支撑长期迭代。</p>
+    <p class="project-kicker">Project Focus</p>
+    <h3>图形编辑与业务系统交付</h3>
+    <p>这两个项目分别对应“可发布的桌面业务系统”和“可复用的图形编辑插件”，也能体现我在复杂交互、数据处理、打包发布和文档化上的经验。</p>
     <ul class="tag-list">
-      <li>Element</li>
-      <li>Ant Design Vue</li>
-      <li>Pinia</li>
-      <li>Socket</li>
-      <li>地图</li>
+      <li>工程化</li>
+      <li>复杂表单</li>
+      <li>富文本</li>
+      <li>发布维护</li>
     </ul>
   </article>
 
   <article class="project-card callout">
     <p class="project-kicker">Contact</p>
-    <h3>需要更多细节可以邮件沟通。</h3>
-    <p>公开页面只保留项目方向和技术能力，具体业务和隐私内容不会放到站点上。</p>
+    <h3>后续可以继续补更多项目。</h3>
+    <p>如果要继续放低代码看板、3D 可视化、后台系统等项目，可以按这个卡片结构继续追加。</p>
     <a class="project-link" href="mailto:{{site.email}}">联系我</a>
     <a class="project-link ghost" href="{{site.home_url}}">返回主页</a>
   </article>

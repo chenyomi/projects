@@ -1,6 +1,6 @@
 # Site settings
-title: 陈玉明的项目作品集
-description: 陈玉明的项目展示页，聚焦图形编辑、数据可视化、Three.js/WebGL、低代码看板和多端前端应用。
+title: 陈玉明的个人项目作品集
+description: 陈玉明的个人项目展示页，收录 Electron ERP 账务管理系统、Leafer UI 富文本编辑插件等可公开访问的项目作品。
 baseurl: "/projects"
 url: "https://chenyomi.top"
 

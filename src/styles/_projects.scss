@@ -70,11 +70,11 @@
 .project-link {
   display: inline-block;
   margin: 10px 0px;
-  padding: 5px;
+  padding: 9px 14px;
   color: $main;
   background-color: transparent;
   border: 1px solid $main;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -100,6 +100,11 @@
   }
 }
 
+.project-link.ghost {
+  border-color: #d1d5db;
+  color: #374151;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -110,15 +115,20 @@
 .project-card {
   padding: 28px;
   border: 1px solid #e5e7eb;
-  border-radius: 26px;
+  border-radius: 8px;
   background: #fff;
   box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
 
-  &.featured {
-    grid-row: span 2;
+  &.project-card-large {
     background:
-      radial-gradient(circle at 20% 20%, rgba(112, 86, 255, .14), transparent 34%),
-      linear-gradient(135deg, #fff, #eef2ff);
+      linear-gradient(135deg, rgba(30, 64, 175, .08), transparent 42%),
+      #fff;
+  }
+
+  &.accent {
+    background:
+      linear-gradient(135deg, rgba(5, 150, 105, .1), transparent 42%),
+      #fff;
   }
 
   &.callout {
@@ -128,13 +138,18 @@
     p {
       color: rgba(255, 255, 255, .76);
     }
+
+    .project-link.ghost {
+      border-color: rgba(255, 255, 255, .44);
+      color: #fff;
+    }
   }
 
   h3 {
     margin: 6px 0 12px;
     padding-top: 0;
     color: inherit;
-    letter-spacing: -.03em;
+    letter-spacing: 0;
   }
 
   p {
@@ -145,10 +160,10 @@
 
 .project-kicker {
   margin: 0 0 8px;
-  color: #6d5dfc !important;
+  color: #2563eb !important;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: .12em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -163,10 +178,35 @@
   li {
     padding: 7px 11px;
     border: 1px solid #e5e7eb;
-    border-radius: 999px;
+    border-radius: 8px;
     color: #111827;
     background: #f8fafc;
     font-size: 13px;
+  }
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+
+  .project-link {
+    margin: 0;
+    border-color: #2563eb;
+    color: #2563eb;
+  }
+
+  .project-link:hover,
+  .project-link:active {
+    border-color: #2563eb;
+    background-color: #2563eb;
+    color: #fff;
+  }
+
+  .project-link.ghost {
+    border-color: #d1d5db;
+    color: #374151;
   }
 }
 
@@ -175,7 +215,7 @@
     grid-template-columns: 1fr;
   }
 
-  .project-card.featured {
-    grid-row: auto;
+  .project-actions .project-link {
+    width: 100%;
   }
 }
