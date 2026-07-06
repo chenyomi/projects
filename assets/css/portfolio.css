@@ -115,6 +115,12 @@
     #ffffff;
 }
 
+.project-card.warm {
+  background:
+    linear-gradient(135deg, rgba(217, 119, 6, 0.1), transparent 42%),
+    #ffffff;
+}
+
 .project-card.callout {
   background: #111827;
   color: #fff;
