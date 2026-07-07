@@ -1,5 +1,5 @@
-html[lang="zh"] [data-lang="en"],
-html[lang="en"] [data-lang="zh"] {
+html[lang="zh"] [data-lang="en"]:not(.lang-btn),
+html[lang="en"] [data-lang="zh"]:not(.lang-btn) {
   display: none;
 }
 
@@ -19,6 +19,7 @@ html[lang="en"] [data-lang="zh"] {
 }
 
 .lang-btn {
+  display: inline-block;
   min-width: 40px;
   padding: 6px 12px;
   border: none;
