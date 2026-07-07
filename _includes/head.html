@@ -3,9 +3,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{{ site.title_zh }} | {{ site.title_en }}</title>
+  <meta name="description" content="{{ site.description_zh }} {{ site.description_en }}">
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/portfolio.css" | prepend: site.baseurl }}">
+  <script>
+    (function () {
+      var lang = localStorage.getItem('portfolio-lang');
+      if (!lang && navigator.language) {
+        lang = navigator.language.toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+      }
+      document.documentElement.lang = lang === 'en' ? 'en' : 'zh';
+    })();
+  </script>
 </head>

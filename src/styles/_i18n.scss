@@ -1,0 +1,45 @@
+html[lang="zh"] [data-lang="en"],
+html[lang="en"] [data-lang="zh"] {
+  display: none;
+}
+
+.lang-switch {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, .34);
+  border-radius: 999px;
+  background: rgba(17, 24, 39, .35);
+  backdrop-filter: blur(8px);
+
+  @media only screen and (min-width: $cut) {
+    top: -180px;
+  }
+}
+
+.lang-btn {
+  min-width: 40px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, .72);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &.active {
+    background: #fff;
+    color: #111827;
+  }
+}

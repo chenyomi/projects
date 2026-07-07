@@ -1,5 +1,26 @@
+function setLanguage(lang) {
+  var nextLang = lang === 'en' ? 'en' : 'zh';
+  document.documentElement.lang = nextLang;
+  localStorage.setItem('portfolio-lang', nextLang);
+
+  document.querySelectorAll('.lang-btn').forEach(function (button) {
+    var isActive = button.getAttribute('data-lang') === nextLang;
+    button.classList.toggle('active', isActive);
+    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  });
+}
+
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
+  var savedLang = localStorage.getItem('portfolio-lang') || document.documentElement.lang || 'zh';
+  setLanguage(savedLang);
+
+  document.querySelectorAll('.lang-btn').forEach(function (button) {
+    button.addEventListener('click', function () {
+      setLanguage(button.getAttribute('data-lang'));
+    });
+  });
+
   new SweetScroll({/* some options */});
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */

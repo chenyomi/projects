@@ -1,13 +1,17 @@
 # Site settings
-title: 陈玉明的个人项目作品集
-description: 陈玉明的个人项目展示页，收录 Electron ERP 账务管理系统、Leafer UI 富文本编辑插件、Yoomi 3S W 1.0 等可公开访问的项目作品。
+title_zh: 陈玉明的个人项目作品集
+title_en: Chen Yuming's Portfolio
+description_zh: 陈玉明的个人项目展示页，收录 Electron ERP 账务管理系统、Leafer UI 富文本编辑插件、Yoomi 3S W 1.0 等可公开访问的项目作品。
+description_en: Chen Yuming's portfolio showcasing publicly accessible projects including Electron ERP ledger app, Leafer UI rich text plugin, and Yoomi 3S W 1.0.
 baseurl: "/projects"
 url: "https://chenyomi.top"
 
 # User settings
 username: 陈玉明
-user_description: 9 年经验前端开发工程师，长期关注图形编辑器、低代码看板、Three.js/WebGL、数据可视化、小程序、App 和工业级 Web 应用。这里仅展示可公开的项目类型和技术能力，不包含公司、客户、内部业务或当前项目真实名称。
-user_title: Frontend Developer / Visual Systems
+user_description_zh: 9 年经验前端开发工程师，长期关注图形编辑器、低代码看板、Three.js/WebGL、数据可视化、小程序、App 和工业级 Web 应用。这里仅展示可公开的项目类型和技术能力，不包含公司、客户、内部业务或当前项目真实名称。
+user_description_en: Frontend engineer with 9 years of experience, focused on graphic editors, low-code dashboards, Three.js/WebGL, data visualization, mini-programs, mobile apps, and industrial web applications. This page only showcases publicly shareable project types and technical skills — no company, client, internal business, or current project names.
+user_title_zh: 前端开发工程师 / 可视化系统
+user_title_en: Frontend Developer / Visual Systems
 email: 408550179@qq.com
 github_username: chenyomi
 blog_url: https://408550179s-organization.gitbook.io/blog

@@ -1,18 +1,31 @@
 <div id="particles-js">
   <div class="header">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
       <h1>
         <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
+        <span class="site-description">
+          <span data-lang="zh">{{site.user_title_zh}}</span>
+          <span data-lang="en">{{site.user_title_en}}</span>
+        </span>
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
         <a aria-label="My Github" target="_blank" rel="noopener" href="https://github.com/{{site.github_username}}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My Blog" target="_blank" rel="noopener" href="{{site.blog_url}}"><i class="icon fa fa-book" aria-hidden="true"></i></a>
+        <a aria-label="My Blog" target="_blank" rel="noopener" href="https://408550179s-organization.gitbook.io/blog"><i class="icon fa fa-book" aria-hidden="true"></i></a>
         <a aria-label="Back to home" href="{{site.home_url}}"><i class="icon fa fa-home" aria-hidden="true"></i></a>
       </div>
       <div class="header-links">
-        <a class="link" href="#about" data-scroll>能力概览</a>
-        <a class="link" href="#projects" data-scroll>项目作品</a>
+        <a class="link" href="#about" data-scroll>
+          <span data-lang="zh">能力概览</span>
+          <span data-lang="en">Capabilities</span>
+        </a>
+        <a class="link" href="#projects" data-scroll>
+          <span data-lang="zh">项目作品</span>
+          <span data-lang="en">Projects</span>
+        </a>
       </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
